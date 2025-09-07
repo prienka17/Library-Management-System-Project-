@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project work</title>
+    <link rel="Stylesheet" href="css/edit.css">
+</head>
+<body>
+    <div>
+        <div style="float: ;">
+          <img style="height:150px ;" src="/images/Asset-2.jpg">
+           <img style="float: right ; height: 150px;" src="/images/Sheik-Mujib-2.png"></div>
+    </div>
+    <div style="background-color:rgb(6, 71, 124);">
+      <ul>
+        <li><a href="index.html">HOME</a></li><tr><tr></tr>
+        <li><a href="/about.html">ABOUT</a></li><tr> <tr></tr>
+        <li><a href="contact.html">CONTACT US</a></li><tr><tr></tr>
+        <li ><a style="text-decoration: none;" href="https://maps.app.goo.gl/Uc1r4oqkHAoJnNtk9">LOCATION</a></li><tr><tr></tr>
+        <li><a href="http://localhost/library_Project/index.php?msg=Invalid%20Credentials">LIABRARY MANAGEMENT</a></li>
+        <li style="float: right; padding: 15px;" >
+          <form action="">
+            <input type="text" placeholder="Search..........">
+            <button type="submit">Go</button>
+          </form>
+        </li>
+      </ul>
+    </div>
+    <div style="background-color: brown;">
+      <marquee style="color: yellow; font-family:'Courier New', Courier, monospace;">Welcome To Our University Library!  </marquee>
+    </div><br>
+    <div>
+        <div style=" float: left; width: 40%;height: 335px;">
+            <img style="float: left 10%;" src="/images/citations.jpg">
+            
+            <h3>
+            DR. M. SHAMIM KAISER</h3>
+                <h4> Teacher-in-Charge, University Library</h4>
+        </div>
+        <div style=" float: right;">
+            <div class="slideshow-container">
+        
+                <div class="mySlides fade">
+                  <img src="images/6122_banner_bsmr_hall-3816f4.jpg" style=" ">
+                </div>
+            
+                <div class="mySlides fade">
+                  <img src="images/NMYT0PnV9SSOx4IAzRUrg6UwweXWq1WBXshVwkNr.jpg" style="">
+                </div>
+            
+                <div class="mySlides fade">
+                  <img src="images/9wLQQCnx1eHfGeWG82uxBP67lv8fpdgPICigKt9o.jpg" style="">
+                </div>
+            
+              </div>
+            
+              <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+              </div>
+            
+              <script>
+              let slideIndex = 0;
+              showSlides();
+            
+              function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+              }
+              </script>
+            </div>
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+          </div>
+          <div>
+    </div>
+    
+     <div><br>
+        
+           <h1 style="text-align: ;">Our History</h1> 
+         <P>  
+            The Library started in *** with a collection of — books. Now the elibrary has — books. This is the first digital library in Jahangirnagar University. The present total measurement of the library is — square feet.
+            
+             since its inception, has been providing library support to students, teachers, researchers and general readers . This library has a collection of  books, journal volumes and periodicals. These books and journals cover all areas of knowledge and information and reflect the nature of a general university with equal emphasis on humanities, social sciences, business administration, sciences and applied sciences. The library has also a huge archive of newspapers and other  publications.
+            
+        </p>
+      </div><br>
+      <div>
+        <p>
+          <h1 style="text-align: center;">Library Membership</h1> 
+            
+            All students, Department members, institute members, part-time institute members, officers,  teaching assistants and research assistants are entitled to become the library member. Pay slip of admission fees, personal e-mail and one copy passport size photograph are required for membership. 
+           <h1 style="text-align: center;"> Library Hours</h1>
+            
+            The library remains open from 8:00 am to 5:00 pm on Sunday through Thursday. On Saturday it remains open from 2:00 pm to 5:00 pm and maintains single shift from 9:00 am to 5:00 pm during the semester break. It remains closed on public holidays and other dates announced by the university authorities.
+            </p>
+      </div>
+</body>
+</html>

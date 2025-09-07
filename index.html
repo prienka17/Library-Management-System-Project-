@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Three Divs in One Row</title>
+
+<style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float:left;
+  }
+  
+  li a {
+    color: #fff;
+    display:block;
+    padding: 15px;
+    text-decoration: none;
+    
+   
+  }
+  .container {
+    display: flex;
+  }
+  
+  .box {
+    flex: 1;
+    height: 450px; 
+    background-color: #687b97; 
+    margin: 5px; 
+  }
+
+  .contain {
+    display: flex;
+    justify-content: space-between;
+    width: 90%; 
+    margin: 0 auto; 
+    padding: 50px;
+  }
+  .circle {
+    width: 200px;
+    height: 200px;
+    background-color: blue; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    
+  }
+  .circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+
+  footer {
+    
+        background-color:rgb(6, 71, 124);
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .logo-container {
+        display: flex;
+        justify-content: center;
+    }
+    .logo-container i {
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .logo-container i:hover {
+        color:rgb(6, 71, 124);
+        background-color: white;
+    }
+    .logo {
+        margin: 0 10px;
+    }
+</style>
+</head>
+<body>
+  <header>
+    <div>
+      <div style="float: ;">
+        <img style="height:150px ;" src="/images/Asset-2.jpg">
+         <img style="float: right ; height: 150px;" src="/images/Sheik-Mujib-2.png"></div>
+  </div>
+  <div style="background-color:rgb(6, 71, 124);">
+    <ul>
+      <li><a href="index.html">HOME</a></li><tr><tr></tr>
+      <li><a href="about.html">ABOUT</a></li><tr> <tr></tr>
+      <li><a href="/contact.html">CONTACT US</a></li><tr><tr></tr>
+      <li ><a style="text-decoration: none;" href="https://maps.app.goo.gl/Uc1r4oqkHAoJnNtk9">LOCATION</a></li>
+      <li style="float: right; padding: 15px; color: aliceblue;" >
+      <li><a href="http://localhost/library_Project/index.php?msg=Invalid%20Credentials">LIABRARY MANAGEMENT</a></li><tr><tr></tr>
+       
+    </ul>
+  </div>
+  <div style="background-color: brown;">
+    <marquee style="color: yellow; font-family:'Courier New', Courier, monospace;">Welcome To Our University Library!  </marquee>
+  </div>
+  </header>
+
+  <div class="container">
+  <div class="box">
+    <br><br>
+    <img style="height: 250px;width: 250px; padding-left: 30px;" src="/images/citations.jpg">
+     <h2 style="color: white; padding-left: 35px;">Dr. M. Shamim Kaiser </h2>
+     <p style="color: white; padding-left: 18px;">WELCOME TO UNIVERSITY LIBRARY  </p>
+  </div>
+  <div class="box">
+    <br><br><br>
+    <div class="slideshow-container">
+        
+      <div class="mySlides fade">
+        <img src="images/6122_banner_bsmr_hall-3816f4.jpg" style=" ">
+      </div>
+  
+      <div class="mySlides fade">
+        <img src="images/NMYT0PnV9SSOx4IAzRUrg6UwweXWq1WBXshVwkNr.jpg" style="">
+      </div>
+  
+      <div class="mySlides fade">
+        <img src="images/9wLQQCnx1eHfGeWG82uxBP67lv8fpdgPICigKt9o.jpg" style="">
+      </div>
+     <br>
+    </div>
+  
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+  
+    <script>
+    let slideIndex = 0;
+    showSlides();
+  
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); 
+    }
+    </script>
+   </div>
+  
+  <div class="box">
+    <h1 style="text-align: center;color: yellow;">POPULAR BOOKS</h1>
+    <img style="height: 150px; width: 100px;" src="/images/book1.jpg">
+    <img style="height: 150px; width: 100px;" src="/images/book 2.jpg">
+    <img style="height: 150px; width: 100px;" src="/images/bok5.jpg"><br><br>
+    <img style="height: 150px; width: 100px;" src="/images/bok8.jpeg">
+    <img style="height: 150px; width: 100px;" src="/images/book4.jpg">
+    <img style="height: 150px; width: 100px;" src="/images/bok6.webp">
+   
+  </div>
+</div>
+
+<footer>
+  <div class="logo-container">
+    <i class="fa fa-facebook" style="font-size:48px; cursor:pointer;  "></i>
+    <i class="fa fa-twitter" style="font-size:48px; cursor:pointer;  "></i>
+    <i class="fa fa-linkedin" style="font-size:48px; cursor:pointer;  "></i>
+    <i class="fa fa-youtube" style="font-size:48px; cursor:pointer;  "></i>
+    <i class="fa fa-whatsapp" style="font-size:48px; cursor:pointer;  "></i>
+      
+  </div><br>
+  <div>
+      <a style="float: left; color:aliceblue;font-size: 20px;">Jahangirnagar University, Savar, Dhaka-1342, Bangladesh. Telephone: PABX:02224491045-51 , Fax:02224491052 </a>
+      <a style="float: right;color:white;font-size: 20px;"> © 2024 Jahangirnagar University</a>
+  <div> <br>      
+</footer>
+
+</body>
+</html>
